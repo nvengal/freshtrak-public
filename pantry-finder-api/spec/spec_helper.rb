@@ -1,9 +1,7 @@
 # frozen_string_literal: true
 
-require 'simplecov'
-SimpleCov.start
-require 'simplecov-cobertura'
-SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+require 'coveralls'
+Coveralls.wear!
 
 ENV['JETS_TEST'] = '1'
 ENV['JETS_ENV'] ||= 'test'
